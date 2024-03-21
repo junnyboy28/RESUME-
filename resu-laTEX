@@ -1,0 +1,281 @@
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}%\setmainfont{Times New Roman}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% \usepackage[T1]{fontenc}
+% \usepackage[T1]{fontenc}
+% \usepackage{cochineal}
+% \usepackage{fourier}
+
+% \usepackage{fontspec}
+% \usepackage{polyglossia}
+% \setmainlanguage{german}
+% \setmainfont{Times New Roman}
+
+% serif
+\usepackage{CormorantGaramond}
+\usepackage{charter}
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSingleSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.1in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------\usepackage{fontspec}
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+%----------HEADING----------
+
+
+\begin{center}
+    {\huge Jimil Mandani} \\ \vspace{2pt} 
+    {+91 9175045787} ~ 
+    \small{-}
+    \href{mailto:[jimilmandani28@gmail.com]}{\color{blue}{jimilmandani28@gmail.com}} ~ 
+    \small{-}
+    \href{[https://www.linkedin.com/in/jimil-mandani-ab804121b/]}{ \color{blue}{linkedin Profile}}  ~
+    \small{-}
+    \href{[https://github.com/junnyboy28]}{ \color{blue}{Github Profile}} ~
+    \vspace{-7pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{\color{airforceblue}EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Padre Conceicao College of Engineering (Goa Uni)}{Verna, Goa -IN}
+      {Honors Artificial Intelligence and Machine Learning  - 6.8 CGPA}{Sept 2021 - July 2025}
+    \vspace{-4pt}
+     \resumeSubheading
+      {Kendriya Vidyalaya I.N.S Mandovi}{Verem, Goa -IN}
+      {SSC - 87    HSC - 88}{2017 - 2021}
+  \resumeSubHeadingListEnd
+  \vspace{-10pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{\color{airforceblue}TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Front-End:}}{ \normalsize{HTML, CSS, JS}} \\
+      \vspace{1.2pt}
+      
+     \textbf{\normalsize{Back-End:}}{ \normalsize{PHP}} \\
+      \vspace{1.2pt}
+
+       \textbf{\normalsize{Databases:}}{ \normalsize{MySQL, Firebase}}
+      
+     \textbf{\normalsize{Languages:}}{ \normalsize{C, C++, Python, Dart, Java, R Programming language(Basic), Shell Script}}
+
+      \textbf{\normalsize{Frameworks/SDKs:}}{ \normalsize{Flutter, BootStrap}}
+
+      \textbf{\normalsize{Tools:}}{ \normalsize{Visual Studio, VS Code, Anaconda Navigator, Android Studio, Spyder, Jupyter Notebook, PyCharm, Figma, Canva, Github, Google Cloud Platform, LaTex}}
+
+       \textbf{\normalsize{Operating Systems:}}{ \normalsize{Windows, Linux}}
+
+        \textbf{\normalsize{Soft-Skills:}}{ \normalsize{LeaderShip, TeamWork, Effective Communication, Presentational and Organisational Skills, Strategic Planning}}
+
+       
+
+     % copy and paste above textbf block to add more 
+     }}
+ \end{itemize}
+ \vspace{-16pt}
+ 
+ %-----------EXPERIENCE-----------
+\section{\color{airforceblue}PROJECTS}
+  \resumeSubHeadingListStart
+
+     \resumeSubheading
+      {Oncocare - Ideathon Project}{} 
+      {Sept 2023}{}
+      \resumeItemListStart
+            \resumeItem{\normalsize{A software based product for Cancer Patients and Oncologists.}}
+            \resumeItem{\normalsize{A chatbot, Maps showing nearby Oncologists and Medicals selling cancer drugs and medicines and a symptom tracker Integrated .}}  
+            \resumeItem{\normalsize{Also notification based alarm system on time to consume medicines.}}  
+      \resumeItemListEnd 
+
+    \resumeSubheading
+      {LLM Patent Classifier - Inspirathon Project}{} 
+      {Oct 2023}{}
+      \resumeItemListStart
+            \resumeItem{\normalsize{Developed an innovative chatbot during an overnight hackathon event.}}
+            \resumeItem{\normalsize{Classifies Patent Documents and Summarises it}}  
+            \resumeItem{\normalsize{Conversational AI for natural interaction with users.}}
+            \resumeItem{\normalsize{Problem-solving capabilities, providing solutions to complex queries.}}
+      \resumeItemListEnd  
+
+    \resumeSubheading
+      {Mithya 2k24 - DBMS Project}{} 
+      {Sept 2023}{}
+      \resumeItemListStart
+            \resumeItem{\normalsize{College event management encompasses the planning, execution, and coordination of diverse campus events to enrich the campus community experience.}}
+            \resumeItem{\normalsize{The project features modules for user registration, login, administration, event display, and contact information provision to streamline event organization and communication.}}    
+      \resumeItemListEnd  
+
+    % copy and paste above resumeSubheading block to add more 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------Publications---------------
+\section{\color{airforceblue}Relevant Courses and Certifications}
+    
+  \resumeItemListStart
+    \resumeItem{\normalsize{Google Cloud Computing Foundations and Generative AI by GDSC PCCE}}\href{[https://drive.google.com/file/d/1g9SQVbCLlbuKBt_2I2pXgH8jEleQUOVg/view?usp=drive_link]}{\color{blue}\underline{Certificate}}
+    \vspace{-5pt}
+    
+    \resumeItem{\normalsize{Ethical Hacking and Cyber Security by Diginique Techlabs}}\href{[https://drive.google.com/file/d/1fD2QJ_vn1um0fNFXTNlbsgn1BpZn-Ss8/view?usp=drive_link]}{\color{blue}\underline{Certificate}}
+    \vspace{-5pt}
+
+    % copy and paste above resumeItem block to add more 
+    
+  \resumeItemListEnd 
+      
+\vspace{-8pt}
+
+%-----------EXTRACURRICULAR---------------
+\section{\color{airforceblue}POSITIONS OF RESPONSIBILITY}
+    
+      \resumeItemListStart
+        \resumeItem{\normalsize{\textbf{Vice President} in Entreprenership Cell, PCCE - {Sept 2023 - Present} }} 
+        \vspace{-5pt}
+        \resumeItem{\normalsize{\textbf{Magazine Secretary} in ACE Student Chapter, Computer Dept, PCCE - } {Sept 2023 - Present}}    
+        \vspace{-5pt}
+        \resumeItem{\normalsize{\textbf{Member} in Rotaract Club of Mapusa - } {July 2023 - Present}}    
+        \vspace{-5pt}
+        \resumeItem{\normalsize{\textbf{Member} in National Service Scheme (NSS), PCCE Cell - } {Aug 2023 - Present}}    
+        \vspace{-5pt}
+        \resumeItem{\normalsize{\textbf{Member} in Codezilla Coding Club - } {Aug 2023 - Present}}
+        \vspace{-5pt}
+
+        % copy and paste above resumeItem block to add more 
+      \resumeItemListEnd 
+      
+\vspace{-12pt}
+\end{document}
+
+
